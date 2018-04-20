@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {
+  LocationStrategy,
+  HashLocationStrategy
+} from '@angular/common';
+import {
   RouterModule,
   Router,
   Routes
@@ -29,7 +33,9 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
