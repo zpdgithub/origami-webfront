@@ -1,20 +1,21 @@
 {
-    "name": "origami-webfront",
-    "description": "",
-    "main": "",
-    "authors": [
-        "peter <peter@soez.io>"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/zpdgithub/origami-webfront",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "weui": "1.1.2"
-    }
+  "name": "origami-webfront",
+  "description": "",
+  "main": "",
+  "authors": [
+    "peter <peter@soez.io>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zpdgithub/origami-webfront",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "weui": "1.1.2",
+    "font-awesome": "4.7.0"
+  }
 }

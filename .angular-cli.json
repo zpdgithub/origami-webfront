@@ -19,7 +19,8 @@
         "prefix": "app",
         "styles": [
             "styles.css",
-            "../bower_components/weui/dist/style/weui.min.css"
+            "../bower_components/weui/dist/style/weui.min.css",
+            "../bower_components/font-awesome/css/font-awesome.min.css"
         ],
         "scripts": [],
         "environmentSource": "environments/environment.ts",
