@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { APP_BASE_HREF } from '@angular/common';
+
 import {
   LocationStrategy,
   HashLocationStrategy
@@ -34,6 +36,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
   ],
   providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
