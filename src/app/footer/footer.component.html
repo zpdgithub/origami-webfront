@@ -1,4 +1,17 @@
-<p>
-    <a [routerLink]="['/home']">首页</a>
-    <a [routerLink]="['/me']">我的</a>
-</p>
+<div class="weui-tabbar">
+    <a [routerLink]="['/home']" class="weui-tabbar__item weui-bar__item_on">
+        <div class="weui-tabbar__icon">
+            <i class="fa fa-home"></i>
+        </div>
+        <p class="weui-tabbar__label">微信</p>
+    </a>
+    <a [routerLink]="['/me']" class="weui-tabbar__item">
+        <span style="display: inline-block;position: relative;">
+            <div class="weui-tabbar__icon">
+                <i class="fa fa-user"></i>
+            </div>
+            <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+        </span>
+        <p class="weui-tabbar__label">我</p>
+    </a>
+</div>
