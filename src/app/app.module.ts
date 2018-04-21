@@ -14,14 +14,14 @@ import {
 } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 import {
   routes as childRoutes,
   MeComponent,
   MeComponentModule
-} from './me/me.component';
-import { MeListComponent } from './me-list/me-list.component';
+} from './components/me/me.component';
+import { MeListComponent } from './components/me-list/me-list.component';
 
 
 const routes: Routes = [
