@@ -16,24 +16,30 @@ import {
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { MeComponent } from './me/me.component';
+import {
+  routes as childRoutes,
+  MeComponent,
+  MeComponentModule
+} from './me/me.component';
+import { MeListComponent } from './me-list/me-list.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'me', component: MeComponent }
+  { path: 'me', component: MeComponent, children: childRoutes }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    HomeComponent,
-    MeComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
+    MeComponentModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },
